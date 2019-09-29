@@ -7,7 +7,7 @@ const User=require('../Models/User');
 
 /* GET home page. */
 router.get('/', (req, res, next) =>{
-  res.render('index', { title: 'Eliska' });
+  res.render('index', { title: 'Express' });
 });
 /////////register///////////
 router.post('/register', (req, res, next) =>{
