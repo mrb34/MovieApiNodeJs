@@ -1,6 +1,6 @@
 const mongoose=require('mongoose');
 module.exports=()=>{
-    mongoose.connect('mongodb://movieApiUser:MXG750v8040@ds351987.mlab.com:51987/heroku_rntck724',{ useNewUrlParser: true,useUnifiedTopology: true });
+    mongoose.connect('mongodb://movieApiUser:MXG750v8040@ds153824.mlab.com:53824/heroku_tjmt8jtl',{ useNewUrlParser: true,useUnifiedTopology: true });
 
     mongoose.connection.on('open',()=>{
  //   console.log("MongoDB:Connected");
