@@ -13,8 +13,8 @@ const DirectorSchema=new Schema({
     },
     bio:{
         type:String,
-        maxlength:1000,
-        minlength:50
+       // maxlength:1000,
+      //  minlength:40
     },
 
     createdAt:{

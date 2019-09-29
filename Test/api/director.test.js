@@ -5,7 +5,6 @@ const server=require('../../app');
 
 chai.use(chaiHttp);
 let token,directorId;
-
 describe('api/directors tests',()=>{
     // burda before ile  test kullanıcı bilgleri ile authentication için token bilgileri alınır
     before((done)=>{
@@ -20,7 +19,7 @@ describe('api/directors tests',()=>{
                 done();
             });
     });
-    describe('GET/ directors',()=>{
+     describe('GET/ directors',()=>{
         it('should GET all Directors',  (done)=> {
 
             //burda alınan token ile get isteğinde bulunulur ve 200 kodu dönmesi beklenir.
@@ -36,14 +35,12 @@ describe('api/directors tests',()=>{
     });
     describe('/Post director',()=>{
         it('it should be post a director',  (done)=> {
+
             const director={
                 name:'test_director_name',
                 surname:'test_director_surname',
-                bio:'lorem_ıpsum_test_test_test_test_test_test_test_test_test_test',
-
+                bio:'lorem_ıpsum_',
             };
-
-
             chai.request(server)
                 .post('/api/directors')
                 .send(director)
